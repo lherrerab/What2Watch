@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body ng-app="what2watchApp">
+    <div class="container" ng-controller="MainCtrl">
+      <header>
+        <div class="divHeader">
+          <div class="dropdownMenu">
+            <button class="dropBtn">
+              <img src="images/menu.png" class="menuIcon"/>
+            </button>
+          </div>
+          <div class="divLogo">
+            <img src="images/icon.png" style="height: 4vw;"/>
+          </div>
+          <div class="searchBox">
+            <form>
+              <input type="text" placeholder="Search" class="textBox">
+              <button type="submit" class="btnSearch">
+                <img src="images/search.png" class="searchImage"/>
+              </button>
+            </form>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div id="myDropdown" class="dropMenu">
+          <ul>
+            <li><a ng-href="#/main">Popular Movies</a></li>
+            <li><a ng-href="#/top_movies">Top Rated Movies</a></li>
+            <li><a ng-href="#/popular_series">Popular Series</a></li>
+            <li><a ng-href="#/top_series">Top Rated Series</a></li>
+          </ul>
+        </div>
+        <div ng-view=""></div>
+      </section>
+    </div>
+
+    <footer>
+      <span>© All rights reserved</span>
+    </footer>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/what2watch.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

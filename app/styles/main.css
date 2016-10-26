@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-size: 0;
+}
+
+h1 {
+  font-size: 1.5vw;
+  margin: 0;
+}
+
+header {
+  background-color: black;/*#014665;*/
+}
+
+footer {
+  font-size: 2vw;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  padding: 1vw;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: gray;
+  color: white;
+}
+
+.menuIcon {
+  width: 100%;
+  opacity: .6;
+}
+
+.menuIcon:hover {
+  opacity: 1;
+}
+
+.searchBox {
+  display: inline-block;
+  padding-left: 4vw;
+  vertical-align: middle;
+}
+
+.textBox {
+  width: 50vw;
+  padding: 2px 6px;
+  vertical-align: middle;
+  height: 25px;
+  border: 0;
+}
+
+.searchImage {
+  border: none;
+  display: block;
+  padding: 0 2vw;
+  background: no-repeat url("/images/search.png");
+  background-size: auto;
+  width: 15px;
+  height: 15px;
+  box-shadow: none;
+}
+
+.btnSearch {
+  vertical-align: middle;
+  height: 29px;
+  cursor: pointer;
+  padding: 0;
+  border: solid 1px transparent;
+}
+
+.btnSearch:hover {
+  background-color: lightgrey;
+}
+
+.divHeader {
+  padding: 0 2vw 0 2vw;
+  font-size: 0;
+  line-height: 0;
+}
+
+.divLogo {
+  cursor: pointer;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.dropdownMenu {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dropBtn {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+  outline: none;
+  width: 2.5vw;
+}
+
+.dropMenu{
+  background-color: lightgrey;/*#014665*/;
+  width: 15vw;
+  height: 30vw;
+  position: absolute;
+  z-index: 99;
+  display: none;
+  font-size: 1.5vw;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.poster {
+  height: 200px;
+}
