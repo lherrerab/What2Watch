@@ -4,8 +4,9 @@ body {
 }
 
 h1 {
-  font-size: 1.5vw;
+  font-size: 2.5vw;
   margin: 0;
+  font-family: 'Lalezar', cursive;
 }
 
 header {
@@ -31,6 +32,12 @@ li:hover {
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Righteous', cursive;
+}
+
 .menuIcon {
   width: 100%;
   opacity: .6;
@@ -38,6 +45,14 @@ li:hover {
 
 .menuIcon:hover {
   opacity: 1;
+}
+
+.imgGallery {
+  background-color: #ffffff;
+  display:inline-block;
+  width:35%;
+  text-align:center;
+  padding: 1vw 0px 1vw 0;
 }
 
 .searchBox {
@@ -89,6 +104,23 @@ li:hover {
   vertical-align: middle;
 }
 
+.divDescription {
+  padding-left:1vw;
+  display:inline-block;
+  width: 60%;
+  vertical-align:top;
+  margin-left: 1vw;
+  background-color: #ffffff;
+}
+
+.mainDiv {
+  position:relative;
+  text-align: center;
+  background-color:#f1f1f1;
+  padding: 0 2vw 0 2vw;
+  font-family: 'Armata', sans-serif;
+}
+
 .dropdownMenu {
   display: inline-block;
   vertical-align: middle;
@@ -106,9 +138,8 @@ li:hover {
 }
 
 .dropMenu{
-  background-color: lightgrey;/*#014665*/;
+  background-color: #f1f1f1;/*#014665*/;
   width: 15vw;
-  height: 30vw;
   position: absolute;
   z-index: 99;
   display: none;

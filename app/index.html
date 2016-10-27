@@ -6,6 +6,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
   </head>
   <body ng-app="what2watchApp">
     <div class="container" ng-controller="MainCtrl">
@@ -13,7 +16,7 @@
         <div class="divHeader">
           <div class="dropdownMenu">
             <button class="dropBtn">
-              <img src="images/menu.png" class="menuIcon"/>
+              <img id="btnMenu" src="images/menu.png" class="menuIcon"/>
             </button>
           </div>
           <div class="divLogo">
@@ -38,12 +41,12 @@
             <li><a ng-href="#/top_series">Top Rated Series</a></li>
           </ul>
         </div>
-        <div ng-view=""></div>
+        <div id="mainDiv" ng-view=""></div>
       </section>
     </div>
 
-    <footer>
-      <span>© All rights reserved</span>
+    <footer style="background-color:black;">
+      <span style="font-size: 1.2vw;font-family:Armata;color:white;">© All rights reserved</span>
     </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
