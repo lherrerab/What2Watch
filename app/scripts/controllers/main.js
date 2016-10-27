@@ -9,8 +9,8 @@
  */
 angular.module('what2watchApp')
   .constant('constant', {'api_key':'1f78b8bb5bbfaf7c087b3cbd3d2f942f'})
-  .controller('MainCtrl', function ($scope,$http,constant,callService) {
-
+  .controller('MainCtrl', function ($scope,$http,constant,callService,$routeParams) {
+    console.log($routeParams);
     $scope.getPopularMovies = function() {
       var url = 'https://api.themoviedb.org/3/movie/popular?api_key='+constant.api_key;
       callService.getData(url).then(function(data){

@@ -15,7 +15,7 @@
     </div>
     <div class="imgGallery">
       <div style="display:inline-block; cursor:pointer;" ng-repeat="topRated_serie in topRated_series">
-        <a ng-click="getDetails(topRated_serie.id,'tv')">
+        <a href="#/top_series/{{topRated_serie.id}}">
           <img class="poster" ng-src="{{'https://image.tmdb.org/t/p/w300/'+topRated_serie.poster_path}}"/>
         </a>
       </div>

@@ -30,6 +30,11 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/top_series/:id', {
+        templateUrl: 'views/top_series.html',
+        controller: 'topRatedC',
+        controllerAs: 'main'
+      })
       .when('/popular_series', {
         templateUrl: 'views/popular_series.html',
         controller: 'MainCtrl',
