@@ -16,28 +16,43 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
+        templateUrl: 'views/popular_movies.html',
+        controller: 'popularMoviesCtrl',
+        controllerAs: 'main'
+      })
+      .when('/popular_movies/:id', {
+        templateUrl: 'views/popular_movies.html',
+        controller: 'popularMoviesCtrl',
         controllerAs: 'main'
       })
       .when('/top_movies', {
         templateUrl: 'views/top_movies.html',
-        controller: 'MainCtrl',
+        controller: 'topRatedMoviesCtrl',
+        controllerAs: 'main'
+      })
+      .when('/top_movies/:id', {
+        templateUrl: 'views/top_movies.html',
+        controller: 'topRatedMoviesCtrl',
         controllerAs: 'main'
       })
       .when('/top_series', {
         templateUrl: 'views/top_series.html',
-        controller: 'MainCtrl',
+        controller: 'topRatedSeriesCtrl',
         controllerAs: 'main'
       })
       .when('/top_series/:id', {
         templateUrl: 'views/top_series.html',
-        controller: 'topRatedC',
+        controller: 'topRatedSeriesCtrl',
         controllerAs: 'main'
       })
       .when('/popular_series', {
         templateUrl: 'views/popular_series.html',
-        controller: 'MainCtrl',
+        controller: 'popularSeriesCtrl',
+        controllerAs: 'main'
+      })
+      .when('/popular_series/:id', {
+        templateUrl: 'views/popular_series.html',
+        controller: 'popularSeriesCtrl',
         controllerAs: 'main'
       })
       .otherwise({

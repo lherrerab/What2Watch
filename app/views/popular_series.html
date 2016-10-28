@@ -1,9 +1,9 @@
 <div ng-init="getPopularSeries();" class="mainDiv">
   <h1>POPULAR SERIES</h1>
   <div style="text-align:left;">
-    <div style="display:inline-block; width:65%; vertical-align:top; text-align:left;">
-      <div style="display:inline-block;">
-        <img ng-src="{{'https://image.tmdb.org/t/p/w300/'+mainPoster.poster_path}}"/>
+    <div class="divDetails">
+      <div class="divMainPoster">
+        <img class="mainPoster" ng-src="{{'https://image.tmdb.org/t/p/w300/'+mainPoster.poster_path}}"/>
       </div>
       <div class="divDescription">
         <p style="font-size:1.5vw; text-align:left;"><span>Title:</span> <span>{{mainPoster.name}}</span></p>
@@ -14,9 +14,9 @@
       </div>
     </div>
     <div class="imgGallery">
-      <div style="display:inline-block; cursor:pointer;" ng-repeat="popular_serie in popular_series">
-        <a ng-click="getDetails(popular_serie.id,'tv')">
-          <img class="poster" ng-src="{{'https://image.tmdb.org/t/p/w300/'+popular_serie.poster_path}}"/>
+      <div class="divPoster" ng-repeat="popular_serie in popular_series">
+        <a href="#/popular_series/{{popular_serie.id}}">
+          <img class="poster" ng-src="{{'https://image.tmdb.org/t/p/w150/'+popular_serie.poster_path}}"/>
         </a>
       </div>
     </div>

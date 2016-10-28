@@ -17,7 +17,6 @@ function getUrl(path) {
 }
 
 function hideMenu() {
-  console.log(window.event.srcElement);
   if(window.event.srcElement.id !== 'btnMenu' && window.event.srcElement.id !== 'dropMenu'){
       document.getElementById('myDropdown').style.display = 'none';
   }

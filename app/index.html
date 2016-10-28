@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
   </head>
   <body ng-app="what2watchApp">
-    <div class="container" ng-controller="MainCtrl">
+    <div class="container" ng-controller="searchCtrl">
       <header>
         <div class="divHeader">
           <div class="dropdownMenu">
@@ -23,11 +23,14 @@
             <img src="images/icon.png" style="height: 4vw;"/>
           </div>
           <div class="searchBox">
-            <form>
-              <input type="text" placeholder="Search" class="textBox">
+            <form style="height: 100%;">
+              <input type="text" list="searchlist" placeholder="Search" ng-change="getValues();" ng-model="searchValue" class="textBox">
               <button type="submit" class="btnSearch">
                 <img src="images/search.png" class="searchImage"/>
               </button>
+              <datalist id="searchList">
+                <option ng-repeat="value in searchListValues" value="{{value.title}}">
+              </datalist>
             </form>
           </div>
         </div>
@@ -35,7 +38,7 @@
       <section>
         <div id="myDropdown" class="dropMenu">
           <ul>
-            <li><a ng-href="#/main">Popular Movies</a></li>
+            <li><a ng-href="#/popular_movies">Popular Movies</a></li>
             <li><a ng-href="#/top_movies">Top Rated Movies</a></li>
             <li><a ng-href="#/popular_series">Popular Series</a></li>
             <li><a ng-href="#/top_series">Top Rated Series</a></li>
@@ -72,7 +75,10 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/what2watch.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/topRatedC.js"></script>
+        <script src="scripts/controllers/topRatedMoviesCtrl.js"></script>
+        <script src="scripts/controllers/popularMoviesCtrl.js"></script>
+        <script src="scripts/controllers/topRatedSeriesCtrl.js"></script>
+        <script src="scripts/controllers/popularSeriesCtrl.js"></script>
         <!-- endbuild -->
 </body>
 </html>
